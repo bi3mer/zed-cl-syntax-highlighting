@@ -1,0 +1,11 @@
+id = "common-lisp"
+name = "Common Lisp"
+description = "Common Lisp syntax highlighting."
+version = "0.0.1"
+schema_version = 1
+authors = ["Colan Biemer"]
+repository = "https://github.com/bi3mer/zed-cl-syntax-highlighting"
+
+[grammars.commonlisp]
+repository = "https://github.com/tree-sitter-grammars/tree-sitter-commonlisp"
+rev = "32323509b3d9fe96607d151c2da2c9009eb13a2f"

@@ -1,0 +1,12 @@
+name = "Common Lisp"
+grammar = "commonlisp"
+path_suffixes = ["lisp", "lsp", "cl", "asd"]
+line_comments = [";; ", "; "]
+block_comment = ["#|", "|#"]
+autoclose_before = ")]}"
+word_characters = ["-", "*", "+", "!", "?", "<", ">", "=", "/"]
+brackets = [
+    { start = "(", end = ")", close = true, newline = false },
+    { start = "[", end = "]", close = true, newline = false },
+    { start = "\"", end = "\"", close = true, newline = false, not_in = ["comment", "string"] },
+]
