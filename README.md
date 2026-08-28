@@ -1,6 +1,6 @@
 # Common Lisp for Zed
 
-Syntax highlighting for [Common Lisp](https://lisp-lang.org/). Nothing else.
+Syntax highlighting and rainbow brackets for [Common Lisp](https://lisp-lang.org/). Nothing else.
 
 ## Installing
 
@@ -22,6 +22,18 @@ At this point, you should have syntax highlighting for the following file extens
 ## Updating
 
 On the off-chance this repo is updated and you want to update, first go to the repo you cloned above and run `git pull`. Then, in Zed, run `zed: rebuild dev extension`.
+
+## Rainbow Brackets
+
+Zed colors nested parentheses by depth, cycling through the current theme's accent colors. The setting is off by default. Turn it on for Common Lisp in your `settings.json`:
+
+```json
+"languages": {
+  "Common Lisp": {
+    "colorize_brackets": true
+  }
+}
+```
 
 ## Problems
 
